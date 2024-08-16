@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <style>
+        * {
+            box-sizing: border-box !important;
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            overflow-x: hidden;
+        }
+       .main-container{
+        display: flex;
+        flex-direction: column;
+       }
+        .container1 {
+            position: relative; 
+            width: 100vw;
+            min-height: 100vh;
+            background-image: url('https://i0.wp.com/waynestalk.com/wp-content/uploads/2022/04/sidekix-media-r_y2VBvEOIE-unsplash.jpg?fit=2500%2C1667&ssl=1'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .container1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+
+        nav, .logo-container, .nav-ul, .nav-ul li, button,.jh-msg,.jh-title,.jh-subtitle,.main-title {
+            position: relative;
+            z-index: 2; /* Ensures the content is above the overlay */
+        }
+
+        nav{
+            background-color: #eee;
+            display: flex;
+            justify-content:space-around;
+            padding: 1rem 1rem;
+            border-bottom: 4px solid #bbb;
+        }
+        .logo{
+            width: 12rem;
+            height: 2rem;
+        }
+        ul li{
+            list-style-type: none;
+            margin-top: auto;
+            margin-bottom: auto;
+            transition: 0.2s ease-in-out;
+
+        }
+        .nav-ul{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 3rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+        nav ul li:hover{
+            color: #4c7ce3;
+        }
+        /*  */
+        .main-title{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-top: auto;
+           margin-bottom: auto;
+        }
+        .jh-subtitle{
+            font-size: 1.5rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-family: "Roboto", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            color: #ddd;
+        }
+        .jh-title{
+            font-size: 6rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-weight: bold;
+            color: transparent; 
+            -webkit-text-stroke: 2px #fff; 
+            text-shadow: none;
+            letter-spacing: 4px;
+            display: inline-block;
+        }
+        .jh-msg{
+            font-size: 1.15rem;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            padding: 2rem 2rem;
+            color: #ddd;
+            width: 40rem;
+            text-align: center;
+            margin: auto;
+        }
+        .jh-btn{
+            padding: 1rem 2rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1rem;
+            color: #ddd;
+            background-color: transparent;
+            border: 2px solid #ddd;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: 0.3s ease-in-out;
+        }
+        .jh-btn:hover{
+            background-color: #ddd;
+            color: #3a3a3a;
+        }
+
+        /* container2 */
+        .container2{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding-bottom: 6rem;
+        }
+
+        .c2-img{
+            width: 28rem;
+            height: 36rem;
+            border: 10px solid #fff;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: -3rem;
+            z-index: 3;
+        }
+
+        .container2-left{
+            padding: 4rem 1rem 1rem 8rem;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .container2-right{
+            width: 50%;
+            position: relative;
+            z-index: 3;
+        }
+       
+        .container2-title{
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3rem;
+        }
+        .container2-msg{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15px;
+            width: 85%;
+            color: #3a3a3a;
+        }
+        .btn-dis{
+            padding: 1rem 1.5rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #4c7ce3;
+            border:none;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: 0.3s ease-in-out;
+            font-size: 14px;
+            transition: 0.3s ease-in-out;
+        }
+        .btn-dis:hover{
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+
+
+        /* container 3 */
+        .container3{
+            width: 100vw;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 1rem;
+            gap: 1rem;
+        }
+        .c3-header{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            
+        }
+        .c3head-title{
+            font-family: "Philosopher", sans-serif;
+            font-size: 2.2rem;
+        }
+        .c3-subtitle{
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #3a3a3a;
+            font-size: 14px;
+        }
+        .c3-cards{
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            padding-top: 3rem;
+        }
+        .c-cards{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            width: 15rem;
+            min-height: 15rem auto;
+            padding-bottom: .85rem;
+            background-color: #fff;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+        .c3-svg{
+            transition: 0.3s ease-in-out;
+        }
+        .c-cards:hover .c3-svg{
+            color: #4c7ce3 !important;
+        }
+        .c-cards:hover{
+            transform: scale(1.1);
+        }
+        .c3-imgContainer{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 55%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .c3-msgContainer{
+            width: 100%;
+            height: 45%;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            padding: 1rem 1rem 1rem;
+
+        }
+        .c3-svg{
+            margin: auto;
+            width: 60%;
+            height: 35%;
+        }
+        .c3-title{
+            font-size: .9rem;
+
+        }
+        .c3-msg{
+            font-size: 12px;
+            color: #3a3a3a;
+        }
+        
+        /* container4 */
+
+        .container4{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 8rem 1rem;
+            gap: 4rem;
+        }
+        .c4-body{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 15px;
+            color: #3a3a3a;
+        }
+        .c4-left{
+            display: flex;
+            flex-direction: column;
+            gap: .6rem;
+            padding: 0 1rem;
+        }
+        .c4-right{
+            display: flex;
+            flex-direction: column;
+            gap: .6rem;
+            padding: 0 1rem;
+        }
+
+        /* container5 */
+        .container5{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12rem 1rem 16rem;
+            gap: 4rem;
+            background-color: #191919;
+        }
+        .c5-body{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .c5-con1{
+        width: 40%;
+    }
+    .c5-msg1,.c5-msg2{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+   .c5-column{
+    width: 40%;
+    padding: 3rem 5rem 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+   }
+   .c5-img1{
+    width: 100%;
+    height: 50rem;
+   }
+ 
+   .c5-title{
+    font-family: "Philosopher", sans-serif;
+    font-size: 2.2rem;
+    color: #eee;
+   }
+   .c5msg-Left{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.8;
+    color: #ccc;
+   }
+   @media (max-width:800px){
+    .jh-title{
+        font-size: 4rem;
+    }
+    .jh-msg{
+        font-size: 1rem;
+    }
+    @media (max-width:600px){
+        .jh-title{
+        font-size: 3rem;
+    }
+    .jh-msg{
+        font-size: 1rem;
+    }
+    }
+    .container5{
+        padding: 4rem 1rem 4rem;
+    }
+            .c5-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+            .c5-con1,.c5-column{
+                width: 100%;
+            }
+            .c5-column{
+                padding: 1rem
+            }
+            .c5-con1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+            .c5-img1{
+                max-width: 30rem auto;
+                height:24rem;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+            .c6-column{
+            width: 100% !important;
+            padding: 1rem 0 !important;
+   }
+            .c7-sub{
+            color: #3a3a3a;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        #c7-header{
+            padding: 0 !important;
+        }
+        .container7{
+            padding: 1rem !important;
+        }
+        .c7-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .c7-card1,.c7-card2,.c7-card3{
+        width: 100% !important;
+        }
+        .c9-contact{
+            padding: 2rem !important;
+            width:100% !important;
+        }
+        .container9{
+            padding: 1rem !important;
+        }
+        .c7-ad{
+            width: 5rem;
+            height: .5rem;
+        }
+ 
+         }
+      /* container6 */
+      .container6{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem 1rem;
+            gap: 4rem;
+        }
+
+        .c6-column{
+            width: 40%;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            margin-top: -8rem;
+            border: 4px solid #fff;
+            background-color: #fff;
+   }
+        .c6-body{
+            display: flex;
+            gap: 3rem;
+        }
+        /* container7 */
+    .container7{
+            width: 100vw;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            gap: 5rem;
+        }
+        #c7-header{
+            padding: 0 8rem;
+        }
+        .c7-cards{
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+        }
+        .c7-card1,.c7-card2,.c7-card3{
+            width: 20rem;
+            height: auto;
+            font-family: "Poppins", sans-serif;
+            color: #3a3a3a;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .c7Header{
+            padding: 0 0rem .2rem;
+            font-size: .95rem;
+        }
+        .c7-sub{
+            color: #3a3a3a;
+            font-family:"Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        /*  */
+
+        .img-cards{
+            display: flex;
+            font-family: "Poppins", sans-serif;
+            color: #3a3a3a;
+            font-size: 15px;
+            font-weight: 400;
+            padding: 0;
+
+        }
+        .c7-left{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem 2rem 1rem;
+        }
+        .c7-right{
+            width: 40%;
+        }
+        .c7-img{
+            width: 100%;
+        }
+        .c7-imgLeft{
+            width: 7rem;
+            height: 6rem;
+        }
+        .c7-flexImg{
+            display: flex;
+            justify-content: end;
+            gap: 1rem;
+            padding-bottom: 3rem;
+        }
+        #c7-flexImg{
+            display: flex;
+            justify-content: start;
+            gap: 1rem;
+            padding-bottom: 3rem;
+        }
+        .c7-ad{
+            width: 18rem;
+            height: 1.5rem;
+            background-color: #fff;
+        }
+        /* container8 */
+        .container8{
+            width: 100vw;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            gap: 5rem;
+        }
+
+        /* media container1*/
+        @media (max-width:955px){
+            .nav-ul{
+                display: none;
+            }
+            .jh-msg{
+                word-break: break-all;
+                width: 100%;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            /* container2 */
+            .container2{
+                all: unset;
+            }
+            .container2-left,.container2-right{
+                all: unset;
+            }
+            .container2{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                height: auto;
+                padding-bottom: 6rem;
+            }
+            .container2-left{
+                padding: 2rem;
+                margin-bottom: 3rem;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .container2-right{
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .c2-img{
+                width: 26rem;
+                height: 22rem;
+                margin-top: 0;
+                margin: auto;
+                padding: 0;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+            .c3-cards{
+                justify-content: center;
+            }
+            .c7-flexImg{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-cards{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .c7-left{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+        }
+        .c7-right{
+            width: 100%;
+        }
+        .c7-imgLeft{
+            width: 90%;
+            height: 14rem;
+        }
+        .c9-contact{
+            padding: 3rem !important;
+            width: 55% !important;
+        }
+        .c9-contact{
+            padding: 3rem !important;
+            width: 65% !important;
+        }
+        .x-pad{
+            padding-top: 1rem;
+        }
+         }
+       @media (max-width:500px){
+        .logo{
+            width: 7rem;
+            height: 1rem;
+            
+        }
+        .c9-contact{
+            padding: 2rem !important;
+            width:100% !important;
+        }
+        .container9{
+            padding: 1rem !important;
+        }
+        .c7-ad{
+            width: 5rem;
+            height: .5rem;
+        }
+        .jh-title{
+        all: unset;
+        color: #fff;
+        font-family: "Roboto",sans-serif;
+        font-size: 2.5rem;
+    }
+        .jh-msg{
+            font-size: .85rem;
+        }
+       }
+         @media (max-width:430px){
+            .c2-img{
+                width: 16rem;
+            }
+            .c4-body{
+                display: flex;
+                flex-direction: column;
+            }
+            .container2-title{
+                word-break: break-all;
+            }
+            .c3head-title{
+                word-break: break-all;
+            }
+            .c-cards{
+                width: auto;
+                padding-bottom: 3rem;
+            }
+            .c5-title{
+                word-break: break-all;
+            }
+            .c5-column{
+                padding: 0;
+            }
+         }
+         @media (max-width:280px){
+            .c2-img{
+                width: 10rem;
+                height: 12rem;
+            }
+            .jh-title{
+        all: unset;
+        color: #fff;
+        font-family: "Roboto",sans-serif;
+        font-size: 2rem;
+    }
+        .jh-msg{
+            font-size: .75rem;
+        }
+         }
+       .menu-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        position: relative;
+       }
+       .btn-menu{
+        width: 2rem;
+        height: 2rem;
+       }
+       .nav-hidden{
+        border: 1px solid #ccc;
+        background-color: #fff;
+        position: absolute;
+        top: 3.5rem;
+        right: .1rem;
+        z-index: 1000;
+        padding:  2rem !important;
+        font-family: "Roboto",sans-serif;
+        font-size: 14px;
+        display: none;
+        text-align: center;
+        font-weight: 300;
+       }
+       .nav-hidden li{
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+       }
+       .container1{
+        z-index: 1 !important;
+       }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+
+        <nav>
+            <div class="logo-container">
+                <img class="logo" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/slkmzpwmsmmefdpky31q/jhsereno-dark" srcset="https://res.cloudinary.com/luxuryp/images/w_320,c_limit,f_auto,q_auto/slkmzpwmsmmefdpky31q/jhsereno-dark 320w, https://res.cloudinary.com/luxuryp/images/w_960,c_limit,f_auto,q_auto/slkmzpwmsmmefdpky31q/jhsereno-dark 960w, https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/slkmzpwmsmmefdpky31q/jhsereno-dark 1280w, https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/slkmzpwmsmmefdpky31q/jhsereno-dark 1920w, https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/slkmzpwmsmmefdpky31q/jhsereno-dark 2551w" alt="">
+            </div>
+            <ul class="nav-ul">
+                <li>TEAM</li>
+                <li>HOMES</li>
+                <li>COMMUNITIES</li>
+                <li>SERVICES</li>
+                <li>TESTIMONIALS</li>
+                <li>CONTACT US</li>
+            </ul>
+            <div style="position: relative;">
+                <button class="menu-con">
+                    <svg class="btn-menu" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+                </button>
+
+                <ul class="nav-hidden">
+                    <li>TEAM</li>
+                    <li>HOMES</li>
+                    <li>COMMUNITIES</li>
+                    <li>SERVICES</li>
+                    <li>TESTIMONIALS</li>
+                    <li>CONTACT US</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container1">
+                <div class="main-title">
+                    <p class="jh-subtitle">JH | <span>sereno</span></p>
+                    <h2 class="jh-title">Luxe Living Life</h2>
+                    <p class="jh-msg">
+                        We are dedicated to providing you the best services to maximize your real
+                        estate experience while benefiting people and the planet.
+                    </p>
+                    <div>
+                        <button class="jh-btn">Discover More</button>
+                    </div>
+                </div>
+        </div><!--end of container 1-->
+
+        <!-- start of container 2 -->
+        <div class="container2">
+            <div class="container2-left">
+                <h6 class="container2-title">Julie Hansen partnership</h6>
+                <p class="container2-msg">
+                    An elite group of the East Bay's most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. 
+                    <br><br>More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.
+                </p>
+                <div>
+                    <button class="btn-dis">Discover More</button>
+                </div>
+            </div>
+
+            <div class="container2-right">
+                <img class="c2-img" src="https://byjoandco.com/wp-content/uploads/2023/08/Unlocking-the-Door-to-Your-Ideal-Home-Trust-Jo-Co.-for-All-Your-Real-Estate-Needs-in-Cypress-TX.jpg" alt="">           
+            </div>
+        </div>
+        <!-- end of container2 -->
+
+        <!-- container3 -->
+        <div class="container3">
+            <div class="c3-header con3-myHeader" id="c3-header">
+                <h2 class="c3head-title">Comprehensive Marketing Plan</h2>
+                <p class="c3-subtitle">A Strategic Approach to Elevating Your Brand's Presence and Growth</p>
+            </div>
+
+            <div class="c3-cards">
+                <div class="c-cards">
+                    <div class="c3-imgContainer">
+                        <svg class="c3-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M18.333 2.5c.92 0 1.667.746 1.667 1.667v11.666c0 .92-.746 1.667-1.667 1.667H1.667C.747 17.5 0 16.754 0 15.833V4.167C0 3.247.746 2.5 1.667 2.5zM7.168 11.328l-4.91 4.852h15.325l-4.857-4.802L10 13.265zM18.64 7.292l-4.796 3.316l4.796 4.736zm-17.279.061v7.836l4.686-4.631zm16.956-3.532H1.698a.36.36 0 0 0-.25.086a.26.26 0 0 0-.085.222v1.62L10 11.656l8.644-5.965V4.199q.001-.2-.092-.292a.3.3 0 0 0-.234-.086"/></svg>
+                    </div>
+                    <div class="c3-msgContainer">
+                        <h6 class="c3-title">Responsive</h6>
+                        <p class="c3-msg">I am always available via phone, text, or email.</p>
+                    </div>
+                </div>
+                <div class="c-cards">
+                    <div class="c3-imgContainer">
+                        <svg class="c3-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0v9a5 5 0 0 1-7 0a5 5 0 0 0-7 0zm0 16v-7"/></svg>
+                    </div>
+                    <div class="c3-msgContainer">
+                        <h6 class="c3-title">Syndication</h6>
+                        <p class="c3-msg">I market your property locally, nationally, and internationally</p>
+                    </div>
+                </div>
+                <div class="c-cards">
+                    <div class="c3-imgContainer">
+                        <svg class="c3-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M8.25 9a3.75 3.75 0 1 1 7.5 0a3.75 3.75 0 0 1-7.5 0M12 6.75a2.25 2.25 0 1 0 0 4.5a2.25 2.25 0 0 0 0-4.5" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M5.456 8.127a6.403 6.403 0 0 1 6.382-5.877h.324a6.403 6.403 0 0 1 6.382 5.877a6.9 6.9 0 0 1-1.534 4.931l-3.595 4.397a1.828 1.828 0 0 1-2.83 0L6.99 13.058a6.9 6.9 0 0 1-1.534-4.93m6.382-4.377a4.903 4.903 0 0 0-4.887 4.5a5.4 5.4 0 0 0 1.2 3.859l3.595 4.396c.131.16.377.16.508 0l3.595-4.396a5.4 5.4 0 0 0 1.2-3.859a4.903 4.903 0 0 0-4.887-4.5z" clip-rule="evenodd"/><path fill="currentColor" d="M7.67 16.335a.75.75 0 1 0-1.34-.67l-2 4A.75.75 0 0 0 5 20.75h14a.75.75 0 0 0 .67-1.085l-2-4a.75.75 0 1 0-1.34.67l1.457 2.915H6.214z"/></svg>
+                    </div>
+                    <div class="c3-msgContainer">
+                        <h6 class="c3-title">Virtual Tour</h6>
+                        <p class="c3-msg">Let's make your home stand out with a high quality virtual tour.</p>
+                    </div>
+                </div>
+                <div class="c-cards">
+                    <div class="c3-imgContainer">
+                        <svg class="c3-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M13 10a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1"/><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12c0 .556-.227 1.06-.593 1.422A1 1 0 0 1 20.5 20H4a2 2 0 0 1-2-2zm6.892 12l3.833-5.356l-3.99-4.322a1 1 0 0 0-1.549.097L4 12.879V6h16v9.95l-3.257-3.619a1 1 0 0 0-1.557.088L11.2 18z"/></g></svg>
+                   </div>
+                   <div class="c3-msgContainer">
+                       <h6 class="c3-title">Photography</h6>
+                       <p class="c3-msg">Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
+                   </div>
+               </div>
+            </div>
+        </div>
+
+        <!-- container4 -->
+        <div class="container4">
+            <div class="c3-header c4-headCon">
+                <h2 class="c3head-title">My Staging Expertise</h2>
+            </div>
+
+            <div class="c4-body">
+                <div class="c4-left">
+                    <p>Unclutter and organize your home for a clean presentation.</p>
+                    <p>Neatly arrange drawers and cabinets to enhance appeal</p>
+                    <p> Play gentle background music to create a welcoming atmosphere</p>
+                    <p>Keep pets outdoors or away from the property during showings</p>
+                </div>
+                <div class="c4-right">
+                    <p>Unclutter and organize your home for a clean presentation.</p>
+                    <p>Neatly arrange drawers and cabinets to enhance appeal</p>
+                    <p> Play gentle background music to create a welcoming atmosphere</p>
+                    <p>Keep pets outdoors or away from the property during showings</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- container5 -->
+        <div class="container5">
+
+          <div class="c5-body">
+            <div class="c5-column c5-column1a">
+                <div class="c5-msg1">
+                    <h2 class="c5-title">Over 33 Years of Real Estate Success</h2>
+                    <p class="c5msg-Left">We provide every one of our clients with a level of service they won't find anywhere else. 
+                        We give them what they need, often before they know they need it. In real estate, almost everything 
+                        can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. And it's an experience like no other.
+                    </p>
+                </div>
+
+                <div class="c5-msg2">
+                    <h2 class="c5-title">We Want To Create An Unforgettable Experience For You...</h2>
+                    <p class="c5msg-Left">We combine data gained from your home's Comparative Market Analysis with
+                         local market research to create a marketing plan designed to help you meet your selling goals. 
+                         Your home's carefully designed plan will include a range of online, print, and other marketing tools 
+                         targeted to the best-qualified pool of buyers. Successfully marketing a home in today's
+                         real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.
+                    </p>
+                </div>
+            </div>
+  
+            <div class="c5-con1 c5-con1a">
+              <img class="c5-img1" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/azjfmtzx6evxpubynfci/edit-page-11r2" alt="">
+            </div>
+          </div>
+
+        </div><!--end of container5-->
+
+        <!-- container6 -->
+        <div class="container6">
+            <div class="c5-body c6-body">
+                <div class="c5-con1 c6-con1b">
+                    <img class="c5-img1" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/fuammgjubhjfvgcqleef/edit-image-056" alt="">
+                  </div>
+                  
+                <div class="c6-column c6-column2b">
+                    <div class="c5-msg1">
+                        <h2 class="c5-title" style="color: #000;">Over 33 Years of Real Estate Success</h2>
+                        <p class="c5msg-Left" style="color: #3a3a3a;">We provide every one of our clients with a level of service they won't find anywhere else. 
+                            We give them what they need, often before they know they need it. In real estate, almost everything 
+                            can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. And it's an experience like no other.
+                        </p>
+                    </div>
+    
+                    <div class="c5-msg2">
+                        <h2 class="c5-title" style="color: #000;">We Want To Create An Unforgettable Experience For You...</h2>
+                        <p class="c5msg-Left" style="color: #3a3a3a;">We combine data gained from your home's Comparative Market Analysis with
+                             local market research to create a marketing plan designed to help you meet your selling goals. 
+                             Your home's carefully designed plan will include a range of online, print, and other marketing tools 
+                             targeted to the best-qualified pool of buyers. Successfully marketing a home in today's
+                             real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.
+                        </p>
+                    </div>
+                </div>
+              </div>
+        </div> <!--end of container6-->
+
+        <div class="container7">
+            <div class="c3-header c7-header" id="c7-header">
+                <h2 class="c3head-title" style="padding-bottom: 1rem;">My Staging Expertise</h2>
+
+                <h6>Our Online Marketing Strategy</h6>
+                <p class="c7-sub">
+                    The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.
+                </p>
+            </div>
+
+            <div class="c7-cards">
+                <div class="c7-card1">
+                    <h4 class="c7Header">Local Exposure</h4>
+                    <p>Through our partnership with Nextdoor, the private online social network now 
+                        used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods,
+                        we make sure your home receives targeted local exposure. When you list your home 
+                        with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.
+                    </p>
+                </div>
+
+                <div class="c7-card2">
+                    <h4 class="c7Header">National Exposure</h4>
+                    <p>We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, 
+                        driving more consumers to your home and increasing exposure. 
+                        We  will receive every inquiry about your property directly.
+                    </p>
+                </div>
+
+                <div class="c7-card3">
+                    <h4 class="c7Header">International Exposure</h4>
+                    <p>To expose your luxury listing to millions of potential homebuyers worldwide, 
+                        we promote on prominent international real estate portals, including: Wall Street Journal,
+                         LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, 
+                        China.apr.com, Caimeiju, Juwai, Country Life UK.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- container 8 -->
+        <div class="container8">
+            <div>
+                <img class="c7-ad" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/olcvsnzpdrd5tov8dbci/image-057" alt="">
+            </div>
+
+            <div class="img-cards">
+                <div class="c7-left c7-left1a">
+                    <div class="c7-flexImg">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060" alt="" class="c7-imgLeft">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069" alt="" class="c7-imgLeft">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070" alt="" class="c7-imgLeft">
+                    </div>
+                    <p>Leading Real Estate Companies of The World® & Luxury Portfolio International</p>
+                    <p>JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, Our luxury listings are exposed to a vast global audience and reach potential buyers and investors in over 50 countries.
+                    </p>
+                    <p style="text-align: center;">Who's Who in Luxury Real Estate</p>
+                    <p>Who's Who in Luxury Real Estate is a global collection of luxury real estate brokers.</p>
+                </div>
+
+                <div class="c7-right c7-right1a">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="" class="c7-img">
+                </div>
+            </div>
+
+            <div class="img-cards">
+                <div class="c7-right c7-right2b">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvif7iqcx0lcjlvwyuz/edited-page-20" alt="" class="c7-img">
+                </div>
+                <div class="c7-left c7-left2b">
+                    
+                    <p class="x-pad">
+                        Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:
+                    </p>
+                    <div class="c7-flexImg" id="c7-flexImg">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060" alt="" class="c7-imgLeft">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069" alt="" class="c7-imgLeft">
+                        <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070" alt="" class="c7-imgLeft">
+                    </div>
+                    <p>We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing. </p>
+                </div>
+            </div>
+        </div><!--end of con8-->
+
+        <!-- container9 -->
+         <style>
+           .container9 {
+            width: 100vw;
+            background-image: url('https://t3.realgeeks.media/thumbnail/4S-2oB9v2hdo6BU0QrA3zBPhxrs=/fit-in/0x720/u.realgeeks.media/skyeinternationalrealty/iStock-542684518-2048-filter.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: end; 
+            padding: 4rem;
+            gap: 5rem;
+            position: relative; 
+}
+
+.c9-contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 45%;
+    padding: 3rem;
+    gap: 1rem;
+    z-index: 1000;
+    position: relative; 
+}
+
+form {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, .btn-send {
+    height: 2.5rem;
+}
+
+input {
+    padding-left: 1rem;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 5rem;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    border: 1px solid #ccc;
+}
+
+::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; 
+    font-size: 14px;
+}
+
+.c9-title {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.c9-sub {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.btn-send {
+    border: none;
+    background-color: #4c7ce3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; 
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+    background-color: #3a3a3a;
+}
+
+.c9-contact, input, textarea, .c9-title, .c9-sub, form {
+    z-index: 1000 !important;
+    position: relative;
+}
+
+         </style>
+        <div class="container9">
+            <div class="c9-contact">
+                <h2 class="c9-title">Let us help. We'd love to <br> hear from you</h2>
+                <p class="c9-sub">Please complete the form below and our agents will get right back to you in less than 24h.</p>
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Phone">
+                <input type="text" placeholder="Your Email">
+                <textarea name="" id="" placeholder="Type Your Message..."></textarea>
+                <button class="btn-send">Send Message</button>
+            </form>
+            </div>
+        </div>
+<!--  -->
+
+<style>
+     .container10{
+            width: 100vw;
+            background-color: #fff;
+            display: flex;
+            padding: 5rem 4rem 2rem 4rem;
+            /* gap: 2rem; */
+        }
+        .footer1{
+            width: 60%;
+            /* background-color: turquoise; */
+        }
+        .footer2{
+            width: 50%;
+            /* background-color: #4c7ce3; */
+        }
+        .footer3{
+            width: 50%;
+            /* background-color: #bbb; */
+        }
+        .footer-bg{
+            font-family: "Philosopher", sans-serif;
+            font-size: 2rem;
+        }
+        .footer-title{
+            font-size: 1rem;
+            font-family: "Karla", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        .footer-bgSub,.footer-msg{
+            font-family: "Karla", sans-serif;
+            font-style: normal;
+            color: #3a3a3a;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 15px;
+            word-break: break-all;
+
+        }
+        .footer-msg{
+            font-size: 15px;
+        }
+        .footer-left{
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+            width: 60%;
+            /* background-color: cadetblue; */
+        }
+        .footer-bottom{
+            display: flex;
+            gap: 2rem;
+            width: 100%;
+        }
+        /*  */
+        .footer-right{
+            /* background-color: #4c7ce3; */
+            width: 40%;
+
+        }
+        .flex-checkbox{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            gap: .5rem;
+            /* background-color: bisque; */
+        }
+        small{
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 10px;
+            font-family: "Karla", sans-serif;
+            font-style: normal;
+            color: #3a3a3a;
+        }
+        .f-news{
+            font-family: "Philosopher", sans-serif;
+            font-size: 2rem;
+        }
+        .footer-rightBottom{
+            font-family: "Karla", sans-serif;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+        .f-desc{
+            text-align: justify;
+            font-family: "Karla", sans-serif;
+            font-size: 13px;
+            margin-top: .8rem;
+        }
+        .chk{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            
+        }
+        .f-inp::placeholder{
+            font-size: 14px;
+            font-family: "Karla", sans-serif;
+        }
+        .f-inp{
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #000;
+        }
+        .f-submit{
+            background-color: transparent;
+            border: 2px solid #3a3a3a;
+            padding: .85rem 2.5rem;
+            font-family: "Karla", sans-serif;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: 0.3s;
+        }
+        .f-submit:hover{
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+        .f-links{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        .f-svg{
+            background-color: #202020;
+            color: #fff;
+            width: 2rem;
+            height: 2rem;
+            padding: 8px;
+            border-radius: 50%;
+        }
+        .p-web{
+            font-family: "Karla", sans-serif;
+            font-size: 18px;
+            
+        }
+        .f-lux{
+            text-decoration: underline;
+        }
+        .img-f{
+            margin-top: 4rem;
+            display: flex;
+            gap: 2.5rem;
+            display: flex;
+            align-items: center;
+        }
+        #img-f{
+            width: 3rem !important;
+            height: .75rem !important;
+        }
+        .f-imgLast{
+            width: 2.25rem;
+            height: 2.65rem;
+        }
+        
+        @media (max-width:700px){
+            .container10{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+            }
+            .footer-bottom{
+                display: flex;
+                flex-direction: column;
+            }
+            .footer1,.footer2,.footer3{
+                width: 100%;
+            }
+            .footer-left,.footer-right{
+                width: 100%;
+            }
+        }
+        @media(max-width:500px){
+            .container10{
+                padding: 4rem 2rem !important;
+            }
+            .footer-left{
+                gap: 2rem;
+            }
+            .footer-bottom{
+                gap: 1rem;
+            }
+        }
+        .copy-con{
+            padding-top: 4.1rem;
+        }
+        .f-copy{
+            font-family: "Karla", sans-serif;
+            font-size: 18px;
+        }
+</style>
+        <footer class="container10">
+            <div class="footer-left">
+                <div class="footer1">
+                    <h2 class="footer-bg">Julie Hansen Partnership</h2>
+                    <p class="footer-bgSub">An elite group of the East Bay's most talented and visionary real estate professionals
+                        believed buyers and sellers deserved more from their real estate company. More service. 
+                        More resources. More integrity. More global reach. In a word, more of everything people 
+                        should expect when they buy or sell their homes.
+                    </p>
+                </div>
+
+                 <div class="footer-bottom">
+                    <div class="footer2">
+                        <h4 class="footer-title">ADDRESS</h4>
+                        <p class="footer-msg">4733 Chabot Drive #100</p>
+                        <p class="footer-msg">Pleasanton, CA 94588</p>
+                        <p class="footer-msg">Julie Hansen-Orvis | CA DRE# 00934447</p>
+                     </div>
+    
+                     <div class="footer3">
+                        <h4 class="footer-title">CONTACT INFORMATION</h4>
+                        <p class="footer-msg">(925) 553-6707</p>
+                        <p class="footer-msg">luxuryhomesinwc@icloud.com</p>
+                     </div>
+                 </div>
+                 <div class="f-links">
+                    <svg class="f-svg" xmlns="http://www.w3.org/2000/svg" width="0.49em" height="1em" viewBox="0 0 486.037 1000"><path fill="currentColor" d="M124.074 1000V530.771H0V361.826h124.074V217.525C124.074 104.132 197.365 0 366.243 0C434.619 0 485.18 6.555 485.18 6.555l-3.984 157.766s-51.564-.502-107.833-.502c-60.9 0-70.657 28.065-70.657 74.646v123.361h183.331l-7.977 168.945H302.706V1000z"/></svg>
+                    <svg class="f-svg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
+                </div>
+
+                <div>
+                    <p class="p-web">Website Designed & Developed by <span class="f-lux">Luxury Presence</span></p>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h2 class="f-news">Newsletter</h2>
+                <p class="footer-rightBottom">Subscribe to our Newsletter <br> for latest news and updates. <br> Stay tuned! </p>
+                <input type="text" placeholder="Email Address" class="f-inp">
+                <div class="flex-checkbox">
+                    <input type="checkbox" class="chk">
+                    <small class="f-desc">
+                        By providing Julie Hansen Partnership your contact information, you 
+                        acknowledge and agree to our Privacy Policy and consent to receiving 
+                        marketing communications, including through automated calls, texts, and 
+                        emails, some of which may use artificial or prerecorded voices. This consent
+                         isn’t necessary for purchasing any products or services and you may opt out at any time. 
+                         To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can
+                          click on the unsubscribe link in the emails. Message and data rates may apply.</small>
+                </div>
+                <button class="f-submit">SUBSCRIBE</button>
+
+                <div class="img-f">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zbesma34ygwklawiysod/dark-realtor-logo_x1vczu" alt="" class="f-imgLast">
+                    <img src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/siun2nwoji9w7v0mssvy/dark-equal-logo_gahxpa" alt="" class="f-imgLast">
+                    <img id="img-f" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qje0mcix0r0qeoiikumu/sereno-logo" alt="" class="f-imgLast">
+                </div>
+
+                <div class="copy-con">
+                    <p class="f-copy">Copyright 2024 | Privacy Policy</p>
+                </div>
+            </div>
+
+            </div>
+        </footer>
+    </div><!--end of main container-->
+    <style>
+        .main-title{
+            transition: 1.3s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        .v-mainTitle{
+            opacity: 1;
+            transform: scale(1);
+
+        }
+        /*  */
+        .container2-left{
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            transform:translateX(-20%);
+            opacity: 0;
+            z-index: 1000;
+        }
+        .v-container2{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        /*  */
+        .container2-right{
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            transform:translateX(20%);
+            opacity: 0;
+            z-index: 1000;
+        }
+        .v-containerRight{
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* container3 */
+
+        .con3-myHeader {
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateY(-100%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .con3-header {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .c3-cards {
+            transition: 1s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+    .v-c3Cards {
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+/* container4 */
+        .c4-headCon {
+            transition: opacity 1.4s ease-in-out;
+            opacity: 0;
+        }
+        .v-c4Header{
+            opacity: 1;
+        }
+        .c4-left{
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            transform:translateX(-20%);
+            opacity: 0;
+            z-index: 1000;
+        }
+        .v-c4Left{
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .c4-right{
+            transition: transform 1s ease-out, opacity 1s ease-out;
+            transform:translateX(20%);
+            opacity: 0;
+            z-index: 1000;
+        }
+        .v-c4Right{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        /* container5 */
+        .c5-column1a{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateY(20%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c5Column1a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .c5-con1a{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateY(-20%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c5Con1a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+/* container6 */
+.c6-column2b{
+    transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateX(20%);
+        opacity: 0;
+        z-index: 1000;
+}
+.v-c6Column2b {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+.c6-con1b{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateX(-20%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c6Con1b {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    /* container7 */
+    
+    .c7-header{
+            transition: 1.3s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        .v-c7header{
+            opacity: 1;
+            transform: scale(1);
+
+        }
+
+        .c7-cards{
+            transition: 1.3s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        .v-c7cards{
+            opacity: 1;
+            transform: scale(1);
+
+        }
+    /* container8 */
+    .c7-ad{
+            transition: 1s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        .v-c7ad{
+            opacity: 1;
+            transform: scale(1);
+
+        }
+        
+        .c7-left1a{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateX(-20%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c7left1a {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .c7-right1a{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateY(-25%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c7right1a {
+        opacity: 1;
+        transform: translateY(0);
+    }
+        /*  */
+
+        .c7-left2b{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateX(20%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c7left2b {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .c7-right2b{
+        transition: transform 1s ease-out, opacity 1s ease-out;
+        transform: translateY(-25%);
+        opacity: 0;
+        z-index: 1000;
+        }
+
+    .v-c7right2b{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* container9 */
+
+    
+    .c9-contact{
+            transition: 1s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+        .v-c9contact{
+            opacity: 1;
+            transform: scale(1);
+        }
+/* footer */
+.footer-left{
+            transition: 1s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+    .v-footerleft{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .footer-right{
+            transition: 1s ease-in-out;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+    .v-footerright{
+        opacity: 1;
+        transform: scale(1);
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.btn-menu').on('click',function(){
+                $('.nav-hidden').fadeToggle();
+            })
+        })
+        // animations
+        let mainTitle = new IntersectionObserver(([entry])=>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('v-mainTitle')
+            }
+        },
+        {threshold:0.5}
+        )
+        mainTitle.observe(document.querySelector('.main-title'))
+       
+        // container 2
+        let container2 = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-container2');
+            }
+        }, 
+        { threshold: 0.2 });
+        container2.observe(document.querySelector('.container2-left'));
+
+        let containerRight = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-containerRight');
+            }
+        }, 
+        { threshold: 0.2 });
+        containerRight.observe(document.querySelector('.container2-right'));
+
+        // container3
+        let con3Header = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('con3-header');
+            }
+        }, 
+        { threshold: 1.0 });
+        con3Header.observe(document.querySelector('.con3-myHeader'));
+
+        let c3Cards = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c3Cards');
+            }
+        }, 
+        { threshold: 0.8 });
+        c3Cards.observe(document.querySelector('.c3-cards'));
+        // container4
+        let c4_headCon = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c4Header');
+            }
+        }, 
+        { threshold: 0.8 });
+        c4_headCon.observe(document.querySelector('.c4-headCon'));
+
+        let c4Left = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c4Left');
+            }
+        }, 
+        { threshold: 0.2 });
+        c4Left.observe(document.querySelector('.c4-left'));
+
+        let c4Right = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c4Right');
+            }
+        }, 
+        { threshold: 0.2 });
+        c4Right.observe(document.querySelector('.c4-right'));
+// container5
+        let c5Column1a = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c5Column1a');
+            }
+        })
+        // { threshold: 0.2 });
+        c5Column1a.observe(document.querySelector('.c5-column'));
+
+        let c5Con1a = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c5Con1a');
+            }
+        }, 
+        { threshold: 0.2 });
+        c5Con1a.observe(document.querySelector('.c5-con1a'));
+
+        // container6
+
+        let column2b = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c6Column2b');
+            }
+        }, 
+        { threshold: 0.2 });
+        column2b.observe(document.querySelector('.c6-column2b'));
+
+        let c5Con1b = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c6Con1b');
+            }
+        }, 
+        { threshold: 0.2 });
+        c5Con1b.observe(document.querySelector('.c6-con1b'));
+   
+//    container7
+
+    let c7header = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c7header');
+            }
+        }, 
+        { threshold: 0.2 });
+        c7header.observe(document.querySelector('.c7-header'));
+   
+        let c7cards = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('v-c7cards');
+            }
+        }, 
+        { threshold: 0.2 });
+        c7cards.observe(document.querySelector('.c7-cards'));
+
+
+
+    let c7ad = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-c7ad');
+                }
+            }, 
+            { threshold: 0.2 });
+            c7ad.observe(document.querySelector('.c7-ad'));
+   
+            let c7left1a = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-c7left1a');
+                }
+            }, 
+            { threshold: 0.2 });
+            c7left1a.observe(document.querySelector('.c7-left1a'));
+
+            let c7right1a = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-c7right1a');
+                }
+            }, 
+            { threshold: 0.2 });
+            c7right1a.observe(document.querySelector('.c7-right1a'));
+
+// 
+            let c7left2b = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-c7left2b');
+                }
+            }, 
+            { threshold: 0.2 });
+            c7left2b.observe(document.querySelector('.c7-left2b'));
+
+            let c7right2b = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-c7right2b');
+                }
+            }, 
+            { threshold: 0.2 });
+            c7right2b.observe(document.querySelector('.c7-right2b'));
+        // container9
+        
+
+        let c9contact = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-c9contact');
+                }
+            }, 
+            { threshold: 0.2 });
+            c9contact.observe(document.querySelector('.c9-contact'));
+            
+            // footer
+
+            let footerleft = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-footerleft');
+                }
+            }, 
+            { threshold: 0.2 });
+            footerleft.observe(document.querySelector('.footer-left'));
+            
+
+            let footerright = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('v-footerright');
+                }
+            }, 
+            { threshold: 0.2 });
+            footerright.observe(document.querySelector('.footer-right'));
+            
+   </script>
+</body>
+</html>
